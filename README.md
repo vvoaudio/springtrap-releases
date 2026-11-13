@@ -1,5 +1,72 @@
 ![SPRINGTRAP](https://raw.githubusercontent.com/vvoaudio/springtrap-releases/main/media/springtrap-full-ui.png)
 
+🇧🇷 **Português** · [🇬🇧 English (abaixo / below)](#english)
+
+# SPRINGTRAP
+
+**Um reverb de mola (spring) com estágio de drive, da VVO Audio.** Gratuito. VST3 para macOS e Windows.
+
+**[⬇ Baixar a versão mais recente](https://github.com/vvoaudio/springtrap-releases/releases/latest)**
+
+| | macOS | Windows |
+|---|---|---|
+| Arquivo | `SPRINGTRAP-<versão>-macOS-Universal.pkg` | `SPRINGTRAP-<versão>-Windows-Setup.exe` |
+| Requisitos | macOS 11 Big Sur ou superior | Windows 10 ou superior · 64 bits |
+| Macs | Apple Silicon (M1 em diante) ou Intel | — |
+| Formato | VST3 | VST3 |
+| Instala em | `/Library/Audio/Plug-Ins/VST3/` | `C:\Program Files\Common Files\VST3\` |
+
+![O tanque de mola](https://raw.githubusercontent.com/vvoaudio/springtrap-releases/main/media/springtrap-spring.png)
+
+## Instalação no Mac
+1. Baixe o `.pkg` na [versão mais recente](https://github.com/vvoaudio/springtrap-releases/releases/latest) e dê um duplo clique.
+2. O macOS vai avisar que não consegue verificar o desenvolvedor (o SPRINGTRAP é gratuito e não é registrado na Apple). Clique em **Concluído** (*Done*), abra **Ajustes do Sistema → Privacidade e Segurança** (*System Settings → Privacy & Security*), role até o fim e clique em **Abrir Mesmo Assim** (*Open Anyway*) ao lado da mensagem do SPRINGTRAP. Confirme com a sua senha.
+3. Avance pelo instalador (ele pede a senha de administrador).
+4. Reinicie a sua DAW ou faça um novo scan de plug-ins, e carregue o **SPRINGTRAP** entre os seus plug-ins VST3.
+
+## Instalação no Windows
+1. Baixe o `.exe` na [versão mais recente](https://github.com/vvoaudio/springtrap-releases/releases/latest) e execute-o.
+2. Se o Windows mostrar **"O Windows protegeu seu computador"** (*Windows protected your PC*), clique em **Mais informações → Executar assim mesmo** (*More info → Run anyway*). O SPRINGTRAP é gratuito e não tem assinatura de código.
+3. Avance pelo instalador (ele pede permissão de administrador).
+4. Reinicie a sua DAW ou faça um novo scan de plug-ins, e carregue o **SPRINGTRAP** entre os seus plug-ins VST3.
+
+## Atualização
+Feche a sua DAW e execute o novo instalador da mesma forma. Ele substitui a versão anterior (inclusive uma cópia antiga na sua própria pasta de plug-ins) e mantém os seus presets e projetos.
+
+### Aviso de atualização
+Uma vez por dia o SPRINGTRAP pergunta ao GitHub qual é a versão mais recente (uma única requisição a `api.github.com`; nada mais é enviado). Se existir uma versão nova, aparece um botão **UPDATE AVAILABLE!** na barra superior. Clique nele: o instalador do seu sistema é baixado, conferido com o checksum SHA-256 publicado e aberto. Feche a sua DAW e conclua o instalador. Nada é instalado sem você.
+Para desligar a verificação, clique com o botão direito no botão e escolha **Turn off update checks** (ou crie um arquivo vazio chamado `update-checks-off` em `~/Library/Application Support/SPRINGTRAP/` no Mac, ou `%APPDATA%\SPRINGTRAP\` no Windows). Apague esse arquivo para ligar de novo.
+
+![Controles](https://raw.githubusercontent.com/vvoaudio/springtrap-releases/main/media/springtrap-knobs.png)
+
+## Guia rápido
+Os nomes dos parâmetros ficam em inglês, exatamente como aparecem no plug-in.
+
+- **Decay** — por quanto tempo a mola continua soando, do curto ao longo.
+- **Drive** — distorção/saturação: empurra o sinal da mola para um estágio de amplificador (só o reverb; o seu sinal seco, dry, continua limpo).
+- **Pre Delay** — o tempo de espera antes de a mola começar (0–80 ms).
+- **Input Gain / Output Gain** — nível de entrada na mola e nível de saída (±18 dB). O som reage ao nível de entrada, como em um equipamento de verdade.
+- **Lowpass / Highpass** — cortam os agudos ou os graves apenas da mola.
+- **Modulate** — uma oscilação lenta que dá vida ao som da mola. **HiFi** — um timbre de mola mais brilhante e limpo.
+- **Mix** — equilíbrio entre o sinal seco e o molhado (dry/wet).
+- **Presets, Save, Load, Undo, Redo, Bypass** — na barra superior. Passe o mouse ou gire qualquer knob para ver o valor exato; duplo clique volta ao padrão, Shift dá ajuste fino.
+
+## Desinstalação
+- **Mac:** apague `/Library/Audio/Plug-Ins/VST3/SPRINGTRAP.vst3`.
+- **Windows:** Configurações → Aplicativos → **SPRINGTRAP (VST3)** → Desinstalar.
+
+Os presets ficam em `~/Library/Application Support/SPRINGTRAP/Presets` (Mac) ou `%APPDATA%\SPRINGTRAP\Presets` (Windows).
+
+---
+O SPRINGTRAP é gratuito para uso pessoal e fornecido no estado em que se encontra, sem garantia. VST é uma marca registrada da Steinberg Media Technologies GmbH.
+A fonte da interface é a Nunito (SIL Open Font License).
+
+---
+
+<a id="english"></a>
+
+# English
+
 # SPRINGTRAP
 
 **A spring-tank reverb with a drive stage, by VVO Audio.** Free. VST3 for macOS and Windows.
@@ -13,8 +80,6 @@
 | Macs | Apple Silicon (M1 and later) or Intel | — |
 | Format | VST3 | VST3 |
 | Installs to | `/Library/Audio/Plug-Ins/VST3/` | `C:\Program Files\Common Files\VST3\` |
-
-![The spring tank](https://raw.githubusercontent.com/vvoaudio/springtrap-releases/main/media/springtrap-spring.png)
 
 ## Install on Mac
 1. Download the `.pkg` from the [latest release](https://github.com/vvoaudio/springtrap-releases/releases/latest) and double-click it.
@@ -34,8 +99,6 @@ Quit your DAW, then run the new installer the same way. It replaces the old vers
 ### Update notice
 Once a day SPRINGTRAP asks GitHub which version is the latest (one request to `api.github.com`; nothing else is sent). If a newer one exists, an **UPDATE AVAILABLE!** button appears in the top bar. Click it: the installer for your system is downloaded, checked against the published SHA-256 checksum and opened. Quit your DAW and finish the installer. Nothing is installed without you.
 To turn the check off, right-click the button and choose **Turn off update checks** (or create an empty file named `update-checks-off` in `~/Library/Application Support/SPRINGTRAP/` on Mac, `%APPDATA%\SPRINGTRAP\` on Windows). Delete that file to turn it back on.
-
-![Controls](https://raw.githubusercontent.com/vvoaudio/springtrap-releases/main/media/springtrap-knobs.png)
 
 ## Quick guide
 - **Decay** — how long the spring keeps ringing, from short to long.
